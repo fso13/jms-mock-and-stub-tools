@@ -1,4 +1,4 @@
 package ru.fso13.jmsmockandstubtools.api;
 
-public class QueueSetting {
+public record QueueSetting(QueueSettingName name, String value) {
 }

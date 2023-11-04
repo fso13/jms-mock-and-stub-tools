@@ -5,4 +5,6 @@ import java.util.Set;
 public interface QueueSettingService {
 
     Set<Queue> getQueues(Filter filter);
+
+    Queue addSetting(Queue queue);
 }

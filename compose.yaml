@@ -1,4 +1,11 @@
 services:
+  amq:
+    container_name: amq
+    build: docker/amq
+    image: amq
+    ports:
+      - 8161:8161
+      - 61616:61616
   postgres:
     image: 'postgres:latest'
     environment:
